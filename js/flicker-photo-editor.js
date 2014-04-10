@@ -1,7 +1,6 @@
 ﻿require(["photo-editor", "flicker-api"], function (getPhotoEditor, getFlickerApi) {
     
      var flickerApi = getFlickerApi();
-    _flickerApi = flickerApi;
 
     var trim = function trim(str){
         return String(str).replace(/^\s+|\s+$/g, '');
