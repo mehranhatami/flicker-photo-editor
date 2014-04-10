@@ -20,7 +20,6 @@
         var searchBox = document.getElementById("searchBox");
         if (trim(searchBox.value)) {
             flickerApi.search(searchBox.value, function (photos) {
-                window._photos = photos;
 
                 var thumbnails = document.getElementById("thumbnails"),
                     thumbnailTemplate = document.getElementById("thumbnailTemplate"),
